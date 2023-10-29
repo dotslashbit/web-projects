@@ -20,15 +20,6 @@ function removeLoadingSpinner() {
 // Show new quote
 async function newQuote(apiQuote) {
     showLoadingSpinner();
-    const apiUrl = "https://stoic-quotes.com/api/quote";
-    try {
-        const response = await fetch(apiUrl);
-        apiQuote = await response.json();
-        console.log(apiQuote);
-        // newQuote(apiQuote);
-    } catch (error) {
-        // catch error here
-    }
     const quote = apiQuote;
     console.log(quote);
     // check if author is available or not
@@ -49,7 +40,7 @@ async function newQuote(apiQuote) {
 }
 
 // Get Quotes From API
-async function getQuotes() {
+async function getQuote() {
     showLoadingSpinner();
     const apiUrl = "https://stoic-quotes.com/api/quote";
     try {
@@ -69,8 +60,8 @@ function tweetQuote() {
 }
 
 // Event Listeners
-newQuoteBtn.addEventListener("click", newQuote);
+newQuoteBtn.addEventListener("click", getQuote);
 twitterBtn.addEventListener("click", tweetQuote);
 
 // On load
-getQuotes();
+getQuote();
