@@ -5,7 +5,7 @@ const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
 
-let apiQuotes = [];
+// let apiQuotes = [];
 
 function showLoadingSpinner() {
     loader.hidden = false;
@@ -18,9 +18,18 @@ function removeLoadingSpinner() {
 }
 
 // Show new quote
-function newQuote() {
+async function newQuote(apiQuote) {
     showLoadingSpinner();
-    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    const apiUrl = "https://stoic-quotes.com/api/quote";
+    try {
+        const response = await fetch(apiUrl);
+        apiQuote = await response.json();
+        console.log(apiQuote);
+        // newQuote(apiQuote);
+    } catch (error) {
+        // catch error here
+    }
+    const quote = apiQuote;
     console.log(quote);
     // check if author is available or not
     if (!quote.author) {
@@ -42,12 +51,12 @@ function newQuote() {
 // Get Quotes From API
 async function getQuotes() {
     showLoadingSpinner();
-    const apiUrl =
-        "https://jacintodesign.github.io/quotes-api/data/quotes.json";
+    const apiUrl = "https://stoic-quotes.com/api/quote";
     try {
         const response = await fetch(apiUrl);
-        apiQuotes = await response.json();
-        newQuote();
+        apiQuote = await response.json();
+        console.log(apiQuote);
+        newQuote(apiQuote);
     } catch (error) {
         // catch error here
     }
