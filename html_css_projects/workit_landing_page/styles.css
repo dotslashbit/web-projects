@@ -23,3 +23,98 @@
 - Body: Manrope Regular 18px 32px line-spacing
 
 */
+
+body {
+    font-family: "manrope";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #24053e;
+}
+
+.navbar a span {
+    border-bottom: 3px;
+    border-bottom-color: #44ffa1;
+    border-bottom-style: solid;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-family: "fraunces";
+    font-weight: semi-bold;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.header span {
+    border-bottom: 7px;
+    border-bottom-color: #44ffa1;
+    border-bottom-style: solid;
+}
+
+.header a {
+    text-decoration: none;
+    color: #24053e;
+    padding: 12px;
+    background-color: #44ffa1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4.2rem;
+}
+
+.content h3 {
+    font-family: "fraunces";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.founder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.founder img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.founder h2 {
+    font-family: "fraunces";
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.founder a {
+    text-decoration: none;
+    color: #24053e;
+    padding: 12px;
+    background-color: #44ffa1;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
