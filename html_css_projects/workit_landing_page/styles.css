@@ -46,6 +46,7 @@ body {
 
 /* NAVBAR */
 .navbar {
+  margin-inline: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,9 +62,14 @@ body {
   border-bottom: #44ffa1 solid 4px;
 }
 
+.navbar a:hover {
+  color: #44ffa1;
+}
+
 /* HEADER */
 
 .header {
+  margin-inline: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,6 +96,13 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 32px;
+  border: 2px solid transparent;
+}
+
+.header a:hover {
+  border: #44ffa1 solid 2px;
+  color: #44ffa1;
+  background-color: #24053e;
 }
 
 .header img {
@@ -100,11 +113,13 @@ body {
 
 /* SECTION CONTENT */
 .content {
+  margin-inline: 20rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
   gap: 5rem;
+  padding-block: 10rem;
 }
 
 .content-number {
@@ -131,24 +146,40 @@ body {
 
 /* SECTION FOUNDER */
 
+.founder {
+  position: relative;
+  height: 400px;
+  margin-block: 10rem;
+}
+
 .founder img {
+  position: absolute;
+  left: 20%;
+  top: 0;
   max-width: 20%;
 }
 
 .founder div {
+  position: absolute;
+  top: 20%;
+  left: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 50%;
-  background-color: #24053e;
+  width: 40%;
+  background: url("./assets/images/bg-pattern-3.svg") no-repeat bottom -60px right
+      40px,
+    #24053e;
   color: #fff;
+  padding: 4.2rem;
 }
 
 .founder div h2 {
   font-family: "fraunces", serif;
   font-size: 3.2rem;
-  line-height: 40px;
+  line-height: 4rem;
+  font-weight: 400;
 }
 
 .founder-text p {
@@ -159,12 +190,20 @@ body {
 
 .founder-text a {
   text-decoration: none;
-  color: #fff;
+  color: #24053e;
   font-family: "manrope", serif;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 32px;
-  background-color: yellowgreen;
+  padding: 1.2rem;
+  background-color: #44ffa1;
+  border: 2px solid transparent;
+}
+
+.founder a:hover {
+  border: #44ffa1 solid 2px;
+  color: #44ffa1;
+  background-color: #24053e;
 }
 
 /* FOOTER */
@@ -181,4 +220,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.footer-icons img {
+  cursor: pointer;
 }
