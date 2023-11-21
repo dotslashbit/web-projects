@@ -25,112 +25,160 @@
 */
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+}
+
+.container {
+  /* width: 100%; */
+  /* height: 100vh; */
+  background: url("./assets/images/bg-pattern-1.svg"),
+    url("./assets/images/bg-pattern-2.svg"), #24053e;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left -130px, center right -60px;
 }
 
 /* NAVBAR */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #000000;
-    font-family: "manrope", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 32px;
-    border-bottom: #44ffa1 solid 4px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "manrope", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 32px;
+  border-bottom: #44ffa1 solid 4px;
 }
 
 /* HEADER */
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "fraunces", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "fraunces", serif;
+  color: #ffffff;
 }
 
 .header h1 {
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 80px;
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 80px;
 }
 
 .header h1 span {
-    border-bottom: #44ffa1 solid 5px;
+  border-bottom: #44ffa1 solid 5px;
 }
 
 .header a {
-    text-decoration: none;
-    background-color: #44ffa1;
-    padding: 1.5rem 3rem;
-    margin-block: 3rem;
-    font-family: "manrope", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 32px;
+  text-decoration: none;
+  background-color: #44ffa1;
+  padding: 1.5rem 3rem;
+  margin-block: 3rem;
+  font-family: "manrope", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 32px;
 }
 
 .header img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 /* MAIN */
 
 /* SECTION CONTENT */
 .content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    gap: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
 }
 
 .content-number {
-    color: #000;
-    padding-block: 1.5rem;
-    padding-inline: 2rem;
-    border-radius: 50%;
-    border: #584d62 solid 1px;
+  color: #000;
+  padding-block: 1.5rem;
+  padding-inline: 2rem;
+  border-radius: 50%;
+  border: #584d62 solid 1px;
 
-    font-family: "fraunces", serif;
+  font-family: "fraunces", serif;
 }
 
 .content h3 {
-    font-family: "fraunces", serif;
-    font-size: 3.2rem;
-    line-height: 40px;
+  font-family: "fraunces", serif;
+  font-size: 3.2rem;
+  line-height: 40px;
 }
 
 .content p {
-    font-family: "manrope", serif;
-    font-size: 1.8rem;
-    line-height: 32px;
+  font-family: "manrope", serif;
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+/* SECTION FOUNDER */
+
+.founder img {
+  max-width: 20%;
+}
+
+.founder div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  background-color: #24053e;
+  color: #fff;
+}
+
+.founder div h2 {
+  font-family: "fraunces", serif;
+  font-size: 3.2rem;
+  line-height: 40px;
+}
+
+.founder-text p {
+  font-family: "manrope", serif;
+  font-size: 1.8rem;
+  line-height: 32px;
+}
+
+.founder-text a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "manrope", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 32px;
+  background-color: yellowgreen;
 }
 
 /* FOOTER */
 .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
 }
 
 .footer-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
