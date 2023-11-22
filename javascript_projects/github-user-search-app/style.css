@@ -19,6 +19,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin: auto;
+  gap: 2rem;
 }
 
 .navbar {
@@ -50,9 +51,44 @@ body {
 }
 
 .search {
-  padding: 1.2rem;
+  color: #555;
+  display: flex;
+  padding: 1rem 2rem;
+  /* border: 2px solid red; */
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.search-input {
+  border: none;
+  margin: 0;
   width: 100%;
-  margin: 1rem auto;
+  height: 4rem;
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  color: inherit;
+  border: none;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+  font-size: 2rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  padding: 1rem 1rem;
+  margin: 0;
+  /* border: 1px solid transparent; */
+  background-color: hsl(212, 100%, 50%);
+  color: #fff;
+  border: none;
+  border-radius: inherit;
+  cursor: pointer;
+  font-size: 2rem;
 }
 
 .info-card {
@@ -60,4 +96,31 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.info-text-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-text-username {
+  text-align: left;
+}
+
+.info-text-bio {
+  text-align: left;
+}
+
+.info-text-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info-text-personal-data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }

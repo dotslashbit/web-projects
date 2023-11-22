@@ -25,14 +25,48 @@
           </div>
         </div>
       </nav>
-      <input
-        class="search"
-        type="text"
-        placeholder="Search GitHub username..."
-      />
+      <form class="search">
+        <input
+          class="search-input"
+          type="search"
+          placeholder="Search GitHub username..."
+        />
+        <button class="submit-btn" type="submit">Search</button>
+      </form>
+
       <div class="info-card">
-        <p>IMAGE</p>
-        <p>INFO</p>
+        <img src="./assets/icon-website.svg" alt="user profile image" />
+        <div class="info-text">
+          <div class="info-text-navbar">
+            <p class="info-text-name">Alexandra</p>
+            <p class="info-text-joined">Joined 25 Jan 2011</p>
+          </div>
+          <p class="info-text-username">@octocat</p>
+          <p class="info-text-bio">
+            I love building apps in React and React Native. I also enjoy playing
+            the piano and gardening.
+          </p>
+          <div class="info-text-stats">
+            <div class="info-text-stats-repo">
+              <p class="info-text-stats-repo-text">Repos</p>
+              <p class="info-text-stats-repo-number">8</p>
+            </div>
+            <div class="info-text-stats-followers">
+              <p class="info-text-stats-followers-text">Followers</p>
+              <p class="info-text-stats-followers-number">1.4k</p>
+            </div>
+            <div class="info-text-stats-following">
+              <p class="info-text-stats-following-text">Following</p>
+              <p class="info-text-stats-following-number">48</p>
+            </div>
+          </div>
+          <div class="info-text-personal-data">
+            <p>Location</p>
+            <p>website</p>
+            <p>twitter</p>
+            <p>github</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
