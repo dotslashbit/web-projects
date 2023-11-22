@@ -247,6 +247,11 @@ body {
 }
 
 @media only screen and (max-width: 70em) {
+  .container {
+    background: #24053e;
+    text-align: center;
+  }
+
   .navbar {
     margin-inline: 3rem;
   }
@@ -257,6 +262,10 @@ body {
 
   .header {
     margin-inline: 5rem;
+  }
+
+  .header h1 {
+    font-size: 5.6rem;
   }
 
   .content {
