@@ -227,66 +227,85 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 110em) {
-  .navbar {
-    margin-inline: 10rem;
-  }
 
-  .header {
-    margin-inline: 10rem;
+/* rem and em don't depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/* ************************************** */
+/* BELOW 1344px (Smaller desktops) */
+/* ************************************** */
+
+@media screen and (max-width: 84em) {
+  .header img {
+    max-width: 70%;
   }
 
   .content {
-    margin: 10rem;
-    flex-direction: column;
+    margin-inline: 5rem;
+    padding-bottom: 5rem;
   }
 
   .founder {
-    height: 60rem;
+    height: 50rem;
+    margin-block: 5rem;
   }
 }
 
-@media only screen and (max-width: 70em) {
+/* ************************************** */
+/* BELOW 1200px (Landscape Tablets) */
+/* ************************************** */
+
+/* ************************************** */
+/* BELOW 944px (Tablets) */
+/* ************************************** */
+
+@media screen and (max-width: 59em) {
   .container {
     background: #24053e;
-    text-align: center;
   }
-
   .navbar {
-    margin-inline: 3rem;
+    margin-inline: 5rem;
   }
-
-  .header img {
-    max-width: 100%;
-  }
-
   .header {
     margin-inline: 5rem;
   }
 
   .header h1 {
     font-size: 5.6rem;
+    line-height: 6.4rem;
   }
 
   .content {
-    margin: 5rem;
+    margin-inline: 5rem;
     flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 5rem;
   }
 
   .founder {
     height: 60rem;
   }
+}
+
+/* BELOW 704px (Smaller tablets) */
+@media screen and (max-width: 44em) {
+  .founder {
+    height: 70rem;
+    width: 100%;
+    margin-inline: 0;
+  }
 
   .founder img {
-    top: 0;
-    left: 30%;
     max-width: 50%;
+    top: 0;
+    left: 25%;
   }
 
   .founder div {
+    width: 60%;
     top: 30%;
-    left: 3%;
-    margin-inline: 0;
-    width: 75%;
+    left: 15%;
   }
 }
+
+/* BELOW 544px (Phones) */
