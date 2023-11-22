@@ -148,7 +148,7 @@ body {
 
 .founder {
   position: relative;
-  height: 400px;
+  height: 40rem;
   margin-block: 10rem;
 }
 
@@ -224,4 +224,60 @@ body {
 
 .footer-icons img {
   cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 110em) {
+  .navbar {
+    margin-inline: 10rem;
+  }
+
+  .header {
+    margin-inline: 10rem;
+  }
+
+  .content {
+    margin: 10rem;
+    flex-direction: column;
+  }
+
+  .founder {
+    height: 60rem;
+  }
+}
+
+@media only screen and (max-width: 70em) {
+  .navbar {
+    margin-inline: 3rem;
+  }
+
+  .header img {
+    max-width: 100%;
+  }
+
+  .header {
+    margin-inline: 5rem;
+  }
+
+  .content {
+    margin: 5rem;
+    flex-direction: column;
+  }
+
+  .founder {
+    height: 60rem;
+  }
+
+  .founder img {
+    top: 0;
+    left: 30%;
+    max-width: 50%;
+  }
+
+  .founder div {
+    top: 30%;
+    left: 3%;
+    margin-inline: 0;
+    width: 75%;
+  }
 }
