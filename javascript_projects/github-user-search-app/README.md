@@ -1,1 +1,1 @@
-Initial readme file, to be modified
+In this web-app, users will be able to put anyone's github username and get the details of that user. The details include the name, bio, number of followers, number of following, number of public repos, number of public gists, and the profile picture of the user. The app is built using vanilla JS and the data is fetched using the Github API.
