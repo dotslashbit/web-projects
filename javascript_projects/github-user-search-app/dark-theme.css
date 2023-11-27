@@ -43,6 +43,12 @@ body {
   gap: 2rem;
 }
 
+.switch-mode:hover {
+  cursor: pointer;
+  color: #0079ff;
+  font-weight: 700;
+}
+
 .switch-text {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
@@ -100,6 +106,10 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: hsl(212, 100%, 60%);
 }
 
 .info-card {
@@ -277,6 +287,10 @@ body {
 .website a {
   text-decoration: none;
   color: #fff;
+}
+
+.website a:hover {
+  text-decoration: underline;
 }
 
 .website img {

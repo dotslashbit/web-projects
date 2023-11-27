@@ -9,6 +9,9 @@ const modeText = document.querySelector(".switch-text");
 
 async function getUserInfo(username) {
   const response = await fetch("https://api.github.com/users/" + username);
+  if (response.status !== 200) {
+    throw new Error("User not found");
+  }
   const data = await response.json();
   return data;
 }
@@ -50,8 +53,7 @@ btn.addEventListener("click", async function (e) {
 
     // Check for null twitter_username
     if (!userDetails.twitter_username) {
-      document.querySelector(".twitter-text").textContent =
-        "No twitter account available";
+      document.querySelector(".twitter-text").textContent = "Not available";
     } else {
       document.querySelector(".twitter-text").textContent =
         userDetails.twitter_username;

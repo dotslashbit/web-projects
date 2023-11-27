@@ -42,12 +42,24 @@ body {
   gap: 2rem;
 }
 
+.switch-mode:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: 700;
+  /* filter: brightness(0); */
+}
+
 .switch-text {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2.4rem;
   color: #697c9a;
 }
+
+/* .switch-text:hover,
+.switch-img:hover {
+  
+} */
 
 .search {
   color: #555;
@@ -70,6 +82,7 @@ body {
   font-size: 2rem;
   color: inherit;
   border: none;
+  caret-color: #0079ff;
 }
 
 .search-input::placeholder {
@@ -97,6 +110,10 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: hsl(212, 100%, 60%);
 }
 
 .info-card {
@@ -276,6 +293,10 @@ body {
   color: #4b6a9b;
 }
 
+.website a:hover {
+  text-decoration: underline;
+}
+
 .website img {
   object-fit: contain;
   width: 2rem;
@@ -294,3 +315,23 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+/* MEDIA QUERIES */
+/* rem and em don't depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/* ************************************** */
+/* BELOW 1344px (Smaller desktops) */
+/* ************************************** */
+
+/* ************************************** */
+/* BELOW 1200px (Landscape Tablets) */
+/* ************************************** */
+
+/* ************************************** */
+/* BELOW 944px (Tablets) */
+/* ************************************** */
+
+/* BELOW 704px (Smaller tablets) */
+
+/* BELOW 544px (Phones) */
