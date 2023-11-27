@@ -26,24 +26,25 @@
         </div>
       </nav>
 
-      <form class="search">
+      <form class="search" id="searchForm">
         <img class="search-img" src="./assets/icon-search.svg" alt="search" />
         <input
           class="search-input"
           type="search"
           placeholder="Search GitHub username..."
+          id="username"
         />
         <button class="submit-btn" type="submit">Search</button>
       </form>
 
       <div class="info-card">
-        <img src="./preview.jpg" alt="user profile image" />
+        <img class="profile-img" src="./preview.jpg" alt="user profile image" />
         <div class="info-text">
           <div class="info-text-navbar">
-            <p class="info-text-name">Alexandra</p>
-            <p class="info-text-joined">Joined 25 Jan 2011</p>
+            <p class="info-text-name">Sahil</p>
+            <p class="info-text-joined">Joined 25 Jan 2021</p>
           </div>
-          <p class="info-text-username">@octocat</p>
+          <p class="info-text-username">@dotslashbit</p>
           <p class="info-text-bio">No info</p>
           <div class="info-text-stats">
             <div class="info-text-stats-repo">
@@ -61,24 +62,43 @@
           </div>
           <div class="info-text-personal-data">
             <div class="location">
-              <img src="./assets/icon-location.svg" alt="location" />
-              <p>San Francisco</p>
+              <img
+                class="location-img"
+                src="./assets/icon-location.svg"
+                alt="location"
+              />
+              <p class="location-text">San Francisco</p>
             </div>
             <div class="twitter">
-              <img src="./assets/icon-twitter.svg" alt="twitter" />
-              <p>@introvertedbot</p>
+              <img
+                class="twitter-img"
+                src="./assets/icon-twitter.svg"
+                alt="twitter"
+              />
+              <p class="twitter-text">@introvertedbot</p>
             </div>
             <div class="website">
-              <img src="./assets/icon-website.svg" alt="website" />
-              <a href="https://neuronize.dev">https://neuronize.dev</a>
+              <img
+                class="website-img"
+                src="./assets/icon-website.svg"
+                alt="website"
+              />
+              <a class="website-text" href="https://neuronize.dev"
+                >https://neuronize.dev</a
+              >
             </div>
-            <div class="github">
-              <img src="./assets/icon-company.svg" alt="github" />
-              <p>@dotslashbit</p>
+            <div class="company">
+              <img
+                class="company-img"
+                src="./assets/icon-company.svg"
+                alt="github"
+              />
+              <p class="company-text">@dotslashbit</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

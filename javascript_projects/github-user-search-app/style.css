@@ -284,14 +284,14 @@ body {
   height: 2rem;
 }
 
-.github {
+.company {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
 
-.github img {
+.company img {
   object-fit: contain;
   width: 2rem;
   height: 2rem;
