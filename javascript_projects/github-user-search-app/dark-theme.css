@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  background-color: hsl(227, 100%, 98%);
+  background-color: #141d2f;
+  color: #fff;
 }
 
 .container {
@@ -26,7 +27,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
 }
 
 .logo-text {
@@ -47,16 +47,16 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2.4rem;
-  color: #697c9a;
+  color: #fff;
 }
 
 .search {
-  color: #555;
+  color: #fff;
   display: flex;
   padding: 1rem 2rem;
   /* border: 2px solid red; */
   border-radius: 12px;
-  background-color: #fff;
+  background-color: #1e2a47;
 }
 
 .search-img {
@@ -70,12 +70,13 @@ body {
   height: 4rem;
   padding: 2rem 2rem;
   font-size: 2rem;
-  color: inherit;
+  color: #fff;
   border: none;
+  background-color: #1e2a47;
 }
 
 .search-input::placeholder {
-  color: #bbb;
+  color: #fff;
   font-family: "Space Mono", monospace;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -105,7 +106,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
+  background-color: #1e2a47;
   border-radius: 12px;
   padding-inline: 5rem;
   padding-block: 2rem;
@@ -133,7 +134,7 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 2.2rem;
   line-height: 3.3rem;
-  color: #2b3442;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -141,7 +142,7 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #697c9a;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -170,7 +171,7 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  background-color: #f6f8ff;
+  background-color: #141d2f;
   border-radius: 12px;
   padding: 1rem 1rem;
   text-align: center;
@@ -181,7 +182,7 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #4b6a9b;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -190,14 +191,14 @@ body {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2rem;
-  color: #2b3442;
+  color: #fff;
 }
 
 .info-text-stats-followers-text {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #4b6a9b;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -206,14 +207,14 @@ body {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2rem;
-  color: #2b3442;
+  color: #fff;
 }
 
 .info-text-stats-following-text {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #4b6a9b;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -222,7 +223,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2rem;
-  color: #2b3442;
+  color: #fff;
 }
 
 .info-text-personal-data {
@@ -235,7 +236,7 @@ body {
   font-family: "Space Mono", monospace;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #4b6a9b;
+  color: #fff;
   font-weight: 400;
   margin-block: 1rem;
 }
@@ -275,7 +276,7 @@ body {
 
 .website a {
   text-decoration: none;
-  color: #4b6a9b;
+  color: #fff;
 }
 
 .website img {

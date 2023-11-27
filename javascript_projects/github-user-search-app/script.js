@@ -2,6 +2,10 @@
 
 const btn = document.querySelector(".submit-btn");
 const username = document.getElementById("username");
+const switchMode = document.querySelector(".switch-mode");
+const theme = document.getElementById("theme-link");
+const modeImage = document.querySelector(".switch-img");
+const modeText = document.querySelector(".switch-text");
 
 async function getUserInfo(username) {
   const response = await fetch("https://api.github.com/users/" + username);
@@ -82,5 +86,22 @@ btn.addEventListener("click", async function (e) {
       });
   } catch (error) {
     console.error("Error fetching user information:", error);
+  }
+});
+
+// Listen for a click on the button
+switchMode.addEventListener("click", function () {
+  // If the current URL contains "ligh-theme.css"
+  if (theme.getAttribute("href") == "light-theme.css") {
+    // ... then switch it to "dark-theme.css"
+    theme.href = "dark-theme.css";
+    modeImage.src = "assets/icon-sun.svg";
+    modeText.textContent = "LIGHT";
+    // Otherwise...
+  } else {
+    // ... switch it to "light-theme.css"
+    theme.href = "light-theme.css";
+    modeImage.src = "assets/icon-moon.svg";
+    modeText.textContent = "DARK";
   }
 });
