@@ -97,6 +97,18 @@ body {
   outline: none;
 }
 
+.error-message {
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  margin-right: 1rem;
+  color: #ff0000;
+  font-weight: 700;
+  margin-block: 1rem;
+  width: max-content;
+}
+
 .submit-btn {
   padding: 1rem 2rem;
   margin: 0;
