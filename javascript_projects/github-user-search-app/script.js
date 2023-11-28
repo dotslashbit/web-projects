@@ -6,10 +6,25 @@ const switchMode = document.querySelector(".switch-mode");
 const theme = document.getElementById("theme-link");
 const modeImage = document.querySelector(".switch-img");
 const modeText = document.querySelector(".switch-text");
+const errorMessage = document.querySelector(".error-message");
 
 async function getUserInfo(username) {
   const response = await fetch("https://api.github.com/users/" + username);
   if (response.status !== 200) {
+    errorMessage.textContent = "User not found";
+    errorMessage.style.color = "#ff0000";
+    errorMessage.style.fontFamily = "monospace";
+    errorMessage.style.fontSize = "1.2rem";
+    errorMessage.style.fontWeight = "700";
+    errorMessage.style.lineHeight = "2.5rem";
+    errorMessage.style.marginBlock = "auto";
+    // errorMessage.style.marginTop = "1rem";
+    // errorMessage.style.marginBottom = "1rem";
+    errorMessage.style.marginLeft = "auto";
+    errorMessage.style.marginRight = "1rem";
+    errorMessage.style.textAlign = "right";
+    errorMessage.style.width = "100%";
+
     throw new Error("User not found");
   }
   const data = await response.json();
