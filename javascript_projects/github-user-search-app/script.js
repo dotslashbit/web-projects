@@ -43,6 +43,7 @@ function fontColor(theme, element) {
 
 btn.addEventListener("click", async function (e) {
   e.preventDefault();
+  errorMessage.textContent = "";
   try {
     let userDetails = await getUserInfo(username.value);
     console.log(userDetails);
