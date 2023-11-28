@@ -16,6 +16,28 @@ async function getUserInfo(username) {
   return data;
 }
 
+function fontColor(theme, element) {
+  if (
+    theme.getAttribute("href") == "light-theme.css" &&
+    (element.textContent == "No location available" ||
+      element.textContent == "No bio available" ||
+      element.textContent == "No website available" ||
+      element.textContent == "No company available" ||
+      element.textContent == "Not available")
+  ) {
+    element.style.color = "#f6f8ff";
+  } else if (
+    theme.getAttribute("href") == "dark-theme.css" &&
+    (element.textContent == "No location available" ||
+      element.textContent == "No bio available" ||
+      element.textContent == "No website available" ||
+      element.textContent == "No company available" ||
+      element.textContent == "Not available")
+  ) {
+    element.style.color = "#697c9a";
+  }
+}
+
 btn.addEventListener("click", async function (e) {
   e.preventDefault();
   try {
@@ -28,6 +50,7 @@ btn.addEventListener("click", async function (e) {
     // Check for null bio
     if (!userDetails.bio) {
       document.querySelector(".info-text-bio").textContent = "No bio available";
+      fontColor(theme, document.querySelector(".info-text-bio"));
     } else {
       document.querySelector(".info-text-bio").textContent = userDetails.bio;
     }
@@ -46,6 +69,7 @@ btn.addEventListener("click", async function (e) {
     if (userDetails.location === null) {
       document.querySelector(".location-text").textContent =
         "No location available";
+      fontColor(theme, document.querySelector(".location-text"));
     } else {
       document.querySelector(".location-text").textContent =
         userDetails.location;
@@ -54,6 +78,7 @@ btn.addEventListener("click", async function (e) {
     // Check for null twitter_username
     if (!userDetails.twitter_username) {
       document.querySelector(".twitter-text").textContent = "Not available";
+      fontColor(theme, document.querySelector(".twitter-text"));
     } else {
       document.querySelector(".twitter-text").textContent =
         userDetails.twitter_username;
@@ -64,6 +89,7 @@ btn.addEventListener("click", async function (e) {
 
     if (!userDetails.blog) {
       websiteElement.textContent = "No website available";
+      fontColor(theme, websiteElement);
       websiteElement.href = ""; // Set or clear the href if needed
     } else {
       websiteElement.textContent = userDetails.blog;
@@ -73,6 +99,7 @@ btn.addEventListener("click", async function (e) {
     if (!userDetails.company) {
       document.querySelector(".company-text").textContent =
         "No company available";
+      fontColor(theme, document.querySelector(".company-text"));
     } else {
       document.querySelector(".company-text").textContent = userDetails.company;
     }
