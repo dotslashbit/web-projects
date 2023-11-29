@@ -81,7 +81,8 @@ body {
       right 2rem,
     #755cde;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 25rem;
+  padding-left: 2rem;
   /* height: 100%;
   width: 100%; */
 }
@@ -90,14 +91,16 @@ body {
   background: url("./assets/pattern-ui-ux.svg") no-repeat top 2rem right 2rem,
     #f6a560;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
 }
 
 .apps {
   background: url("./assets/pattern-apps.svg") no-repeat top 2rem right 2rem,
     #f39e9e;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
 }
 
 .photography {
@@ -106,7 +109,8 @@ body {
       2rem,
     #61c4b7;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
 }
 
 .illustration {
@@ -115,7 +119,8 @@ body {
       2rem,
     #eb7565;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
 }
 
 .motion-graphics {
@@ -124,7 +129,8 @@ body {
       right 2rem,
     #552049;
   border-radius: 12px;
-  padding: 1.5rem;
+  padding-top: 9rem;
+  padding-left: 2rem;
 }
 
 .personal-info {
