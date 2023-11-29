@@ -139,7 +139,7 @@ body {
   width: 100%;
 }
 
-.info-card img {
+.profile-img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -323,3 +323,29 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+/* MEDIA QUERIES */
+/* rem and em don't depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
+
+/* ************************************** */
+/* BELOW 1344px (Smaller desktops) */
+/* ************************************** */
+
+@media screen and (max-width: 84em) {
+  .info-text-stats {
+    flex-wrap: wrap;
+  }
+}
+
+/* ************************************** */
+/* BELOW 1200px (Landscape Tablets) */
+/* ************************************** */
+
+/* ************************************** */
+/* BELOW 944px (Tablets) */
+/* ************************************** */
+
+/* BELOW 704px (Smaller tablets) */
+
+/* BELOW 544px (Phones) */
