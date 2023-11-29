@@ -36,6 +36,10 @@ body {
   text-decoration: none;
 }
 
+.navbar-text:hover {
+  background-color: #755cde;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -166,6 +170,10 @@ body {
   border-radius: 50px;
 }
 
+.personal-info-link:hover {
+  background-color: #f6a560;
+}
+
 .cta {
   display: flex;
   align-items: center;
@@ -211,6 +219,10 @@ body {
   white-space: nowrap;
 }
 
+.cta-link:hover {
+  background-color: #f6a560;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -226,4 +238,8 @@ body {
   padding-block: 1rem;
   border-radius: 50px;
   text-decoration: none;
+}
+
+.footer-link:hover {
+  background-color: #755cde;
 }
