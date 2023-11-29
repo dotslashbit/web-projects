@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff7f0;
+  padding-inline: 15%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar-text {
+  background-color: #030303;
+  color: #fff;
+  font-size: 1.8rem;
+  padding-inline: 2.2rem;
+  padding-block: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 5.6rem;
+  line-height: 7rem;
+  color: #030303;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #7a746e;
+}
+
+.personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-block: 10rem;
+}
+
+.profile-img {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+}
+
+.personal-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.personal-info-heading {
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+.personal-info-description {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #7a746e;
+}
+
+.personal-info-link {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #eb7665;
+  padding-inline: 2.2rem;
+  padding-block: 1rem;
+  border-radius: 50px;
+}
