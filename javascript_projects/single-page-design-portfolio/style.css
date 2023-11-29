@@ -58,6 +58,7 @@ body {
   font-size: 1.8rem;
   line-height: 2.8rem;
   color: #7a746e;
+  text-align: center;
 }
 
 .showcase {
@@ -135,8 +136,8 @@ body {
 }
 
 .profile-img {
-  height: 40rem;
-  width: 40rem;
+  height: 40%;
+  width: 40%;
   border-radius: 50%;
 }
 
@@ -178,10 +179,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block: 10rem;
+  margin-block: 5rem;
   background-color: #030303;
-  padding-block: 10rem;
-  padding-inline: 10rem;
+  padding-block: 8rem;
+  padding-inline: 8rem;
   border-radius: 12px;
   column-gap: 30rem;
 }
@@ -191,7 +192,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .cta-heading {
@@ -227,7 +228,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-block: 10rem;
+  margin-bottom: 5rem;
 }
 
 .footer-link {
