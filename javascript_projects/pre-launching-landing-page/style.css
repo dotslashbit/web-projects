@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #080c20;
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar {
+  margin-block: 3rem;
+  margin-inline: 10rem;
+}
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  row-gap: 2rem;
+  color: #fff;
+  background: url("./assets/illustration-hero-left.svg") no-repeat center left,
+    url("./assets/illustration-hero-right.svg") no-repeat center right,
+    url("./assets/bg-hero-squiggle.svg") no-repeat center center;
+}
+
+.header {
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 900;
+  margin-inline: 30%;
+  text-align: center;
+}
+
+.love {
+  color: #3ee9e5;
+}
+
+.description {
+  margin-inline: 30%;
+  text-align: center;
+  color: #777f98;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
