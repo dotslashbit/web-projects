@@ -50,3 +50,131 @@ body {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+
+.section-info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 35rem;
+  column-gap: 5rem;
+  margin-inline: 20rem;
+}
+
+.passion {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.passion-img {
+  width: 45%;
+  height: auto;
+  background-color: #093f68;
+  padding: 2rem;
+  border-radius: 40px;
+  margin-bottom: 4rem;
+}
+
+.passion-heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.passion-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #777f98;
+}
+
+.finance {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: end;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.finance-img {
+  width: 45%;
+  height: auto;
+  background-color: #093f68;
+  padding: 2rem;
+  border-radius: 40px;
+  margin-bottom: 4rem;
+}
+
+.finance-heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.finance-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #777f98;
+}
+
+.lifestyle {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.lifestyle-img {
+  width: 45%;
+  height: auto;
+  background-color: #093f68;
+  padding: 2rem;
+  border-radius: 40px;
+  margin-bottom: 4rem;
+}
+
+.lifestyle-heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.lifestyle-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #777f98;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: end;
+  align-items: start;
+  row-gap: 1rem;
+}
+
+.work-img {
+  width: 45%;
+  height: auto;
+  background-color: #093f68;
+  padding: 2rem;
+  border-radius: 40px;
+  margin-bottom: 4rem;
+}
+
+.work-heading {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.work-description {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #777f98;
+}
