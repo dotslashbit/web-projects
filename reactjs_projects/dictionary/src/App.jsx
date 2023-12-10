@@ -1,15 +1,11 @@
 import Navbar from "./components/Navbar";
+import SearchBar from "./components/SearchBar";
 
 export default function App() {
   return (
     <div className="mx-96 my-10">
       <Navbar />
-      <form className="my-10 border-solid border-2 border-sky-500 rounded-xl flex justify-between p-4">
-        <input placeholder="Learn Something new..." type="text" />
-        <button>
-          <img src="/assets/images/icon-search.svg" />
-        </button>
-      </form>
+      <SearchBar />
       <main>
         <section className="word flex justify-between my-10">
           <div className="flex flex-col justify-between items-start gap-4">
