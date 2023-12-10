@@ -1,13 +1,9 @@
+import Navbar from "./components/Navbar";
+
 export default function App() {
   return (
     <div className="mx-96 my-10">
-      <nav className="flex justify-between">
-        <img src="assets/images/logo.svg" />
-        <div className="flex justify-between">
-          <p>Sans Sarif</p>
-          <p>Theme Switch</p>
-        </div>
-      </nav>
+      <Navbar />
       <form className="my-10 border-solid border-2 border-sky-500 rounded-xl flex justify-between p-4">
         <input placeholder="Learn Something new..." type="text" />
         <button>
