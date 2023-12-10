@@ -1,19 +1,14 @@
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import SearchWord from "./components/SearchWord";
 
 export default function App() {
   return (
     <div className="mx-96 my-10">
       <Navbar />
       <SearchBar />
+      <SearchWord />
       <main>
-        <section className="word flex justify-between my-10">
-          <div className="flex flex-col justify-between items-start gap-4">
-            <h2 className="text-6xl font-bold">Keyboard</h2>
-            <p className="text-2xl font-light text-violet">/ˈkiːbɔːd/</p>
-          </div>
-          <img src="assets/images/icon-play.svg" />
-        </section>
         <section className="noun">
           <p className="italic font-bold text-xl">noun</p>
           <p className="meaning text-white-darkest text-xl font-light my-5">
