@@ -37,7 +37,7 @@ export default function App() {
           <SearchWord searchResult={searchResult} />
           <Noun searchResult={searchResult} />
           <Verb searchResult={searchResult} />
-          <Footer />
+          <Footer sources={searchResult.sourceUrls} />
         </>
       )}
     </div>
