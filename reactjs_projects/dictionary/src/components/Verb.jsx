@@ -1,4 +1,10 @@
-function Verb() {
+import VerbDefinition from "./VerbDefinition";
+
+function Verb({ searchResult }) {
+  const verbs = searchResult.meanings.filter(
+    (meaning) => meaning.partOfSpeech === "verb"
+  );
+  console.log(verbs);
   return (
     <section className="verb">
       <p className="italic font-bold text-xl mt-10">verb</p>
@@ -6,8 +12,11 @@ function Verb() {
         Meaning
       </p>
       <ul className="meaning-list ml-10 list-disc marker:text-violet">
-        <li className="my-4">To type on a computer keyboard.</li>
-        <p>"Keyboarding is the part of this job I hate the most."</p>
+        {verbs[0].definitions.map((definition, i) => (
+          <VerbDefinition verbDefinition={definition} key={i} />
+        ))}
+        {/* <li className="my-4">To type on a computer keyboard.</li>
+        <p>"Keyboarding is the part of this job I hate the most."</p> */}
       </ul>
     </section>
   );

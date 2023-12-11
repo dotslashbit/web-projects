@@ -1,4 +1,4 @@
-import Definition from "./Definition";
+import NounDefinition from "./NounDefinition";
 import Synonym from "./Synonym";
 
 function Noun({ searchResult }) {
@@ -15,7 +15,7 @@ function Noun({ searchResult }) {
       </p>
       <ul className="meaning-list ml-10 list-disc marker:text-violet">
         {nouns[0].definitions.map((definition, i) => (
-          <Definition definition={definition} key={i} />
+          <NounDefinition nounDefinition={definition} key={i} />
         ))}
         {/* <li className="my-4">
           (etc.) A set of keys used to operate a typewriter, computer etc.

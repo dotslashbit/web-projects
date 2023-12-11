@@ -36,7 +36,7 @@ export default function App() {
         <>
           <SearchWord searchResult={searchResult} />
           <Noun searchResult={searchResult} />
-          <Verb />
+          <Verb searchResult={searchResult} />
           <Footer />
         </>
       )}
