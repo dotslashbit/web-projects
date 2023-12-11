@@ -8,7 +8,7 @@ import Verb from "./components/Verb";
 
 export default function App() {
   const [searchWord, setSearchWord] = useState("");
-  const [searchResult, setSearchResult] = useState({});
+  const [searchResult, setSearchResult] = useState(null);
 
   function handleSearchWordChange(event) {
     setSearchWord(event.target.value);
@@ -32,10 +32,14 @@ export default function App() {
         searchWord={searchWord}
         getSearchResult={getSearchResult}
       />
-      <SearchWord searchResult={searchResult} />
-      <Noun />
-      <Verb />
-      <Footer />
+      {searchResult !== null && (
+        <>
+          <SearchWord searchResult={searchResult} />
+          <Noun searchResult={searchResult} />
+          <Verb />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
