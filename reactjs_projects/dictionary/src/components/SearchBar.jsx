@@ -1,7 +1,8 @@
-function SearchBar({ onChange, searchWord }) {
+function SearchBar({ onChange, searchWord, getSearchResult }) {
   function handleWordSubmit(event) {
     event.preventDefault();
     console.log(searchWord);
+    getSearchResult(searchWord);
   }
 
   return (

@@ -8,9 +8,20 @@ import Verb from "./components/Verb";
 
 export default function App() {
   const [searchWord, setSearchWord] = useState("");
+  const [searchResult, setSearchResult] = useState({});
 
   function handleSearchWordChange(event) {
     setSearchWord(event.target.value);
+  }
+
+  async function getSearchResult(searchWord) {
+    const response = await fetch(
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`
+    );
+    const data = await response.json();
+    console.log(data);
+    setSearchResult(data[0]);
+    // return data;
   }
 
   return (
@@ -19,8 +30,9 @@ export default function App() {
       <SearchBar
         onChange={(e) => handleSearchWordChange(e)}
         searchWord={searchWord}
+        getSearchResult={getSearchResult}
       />
-      <SearchWord />
+      <SearchWord searchResult={searchResult} />
       <Noun />
       <Verb />
       <Footer />
