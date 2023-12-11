@@ -1,10 +1,12 @@
 import Definition from "./Definition";
+import Synonym from "./Synonym";
 
 function Noun({ searchResult }) {
   const nouns = searchResult.meanings.filter(
     (meaning) => meaning.partOfSpeech === "noun"
   );
   console.log("nouns", nouns);
+  console.log("syns", nouns[0].synonyms);
   return (
     <section className="noun">
       <p className="italic font-bold text-xl">noun</p>
@@ -29,9 +31,15 @@ function Noun({ searchResult }) {
           keyboard device.
         </li> */}
       </ul>
-      <div className="synonyms flex justify-start gap-10">
-        <p>Synonyms</p>
-        <p className="text-violet">Electronic Keyboard</p>
+      <div className="flex justify-start items-center gap-10">
+        <p className="synonyms text-white-darkest text-xl font-light my-5">
+          Synonyms
+        </p>
+        <ul className="synonyms flex justify-start gap-10">
+          {nouns[0].synonyms.map((synonym, i) => (
+            <Synonym synonym={synonym} key={i} />
+          ))}
+        </ul>
       </div>
     </section>
   );
