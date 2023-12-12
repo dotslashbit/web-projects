@@ -26,6 +26,7 @@ export default {
       Kalnia: ["Kalnia"],
       Dhurjati: ["dhurjati"],
     },
+    darkMode: "class",
   },
   plugins: [require("@tailwindcss/forms")],
 };

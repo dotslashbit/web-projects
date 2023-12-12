@@ -1,7 +1,7 @@
 import NounDefinition from "./NounDefinition";
 import Synonym from "./Synonym";
 
-function Noun({ searchResult }) {
+function Noun({ searchResult, darkMode }) {
   const nouns = searchResult.meanings.filter(
     (meaning) => meaning.partOfSpeech === "noun"
   );
@@ -37,7 +37,7 @@ function Noun({ searchResult }) {
         </p>
         <ul className="synonyms flex justify-start gap-10">
           {nouns[0].synonyms.map((synonym, i) => (
-            <Synonym synonym={synonym} key={i} />
+            <Synonym synonym={synonym} darkMode={darkMode} key={i} />
           ))}
         </ul>
       </div>

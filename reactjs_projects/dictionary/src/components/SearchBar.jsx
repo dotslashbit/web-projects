@@ -1,4 +1,4 @@
-function SearchBar({ onChange, searchWord, getSearchResult }) {
+function SearchBar({ onChange, searchWord, getSearchResult, darkMode }) {
   function handleWordSubmit(event) {
     event.preventDefault();
     console.log(searchWord);

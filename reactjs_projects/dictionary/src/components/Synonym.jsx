@@ -1,6 +1,6 @@
-function Synonym({ synonym }) {
+function Synonym({ synonym, darkMode }) {
   console.log("synonym", synonym);
-  return <li>{synonym}</li>;
+  return <li className={`${darkMode ? "text-violet" : ""}`}>{synonym}</li>;
 }
 
 export default Synonym;
