@@ -9,9 +9,14 @@ import Verb from "./components/Verb";
 export default function App() {
   const [searchWord, setSearchWord] = useState("");
   const [searchResult, setSearchResult] = useState(null);
+  const [selectedFont, setSelectedFont] = useState("sans-serif");
 
   function handleSearchWordChange(event) {
     setSearchWord(event.target.value);
+  }
+
+  function handleSelectedFontChange(event) {
+    setSelectedFont(event.target.value);
   }
 
   async function getSearchResult(searchWord) {
@@ -25,8 +30,11 @@ export default function App() {
   }
 
   return (
-    <div className="mx-96 my-10">
-      <Navbar />
+    <div className="mx-96 my-10" style={{ fontFamily: selectedFont }}>
+      <Navbar
+        selectedFont={selectedFont}
+        onHandleSelectedFont={(e) => handleSelectedFontChange(e)}
+      />
       <SearchBar
         onChange={(e) => handleSearchWordChange(e)}
         searchWord={searchWord}

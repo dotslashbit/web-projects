@@ -21,6 +21,11 @@ export default {
       violet: "#a445ed",
       red: "#ff5252",
     },
+    fontFamily: {
+      "San Serif": ["sans-serif"],
+      Kalnia: ["Kalnia"],
+      Dhurjati: ["dhurjati"],
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
