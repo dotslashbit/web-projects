@@ -1,4 +1,8 @@
 import React from "react";
+import MoonIcon from "./MoonIcon";
+import ToggleOnIcon from "./ToggleOnIcon";
+import ToggleOffIcon from "./ToggleOffIcon";
+import arrowDown from "../../public/assets/images/icon-arrow-down.svg";
 
 function Navbar({
   selectedFont,
@@ -6,36 +10,37 @@ function Navbar({
   darkMode,
   onHandleDarkMode,
 }) {
-  // const darkModeStyles = darkMode ? "dark:bg-black-darkest" : "";
-
   return (
     <nav className={`flex justify-between`}>
       <img src="assets/images/logo.svg" alt="Logo" />
       <div className={`flex justify-between items-center gap-4`}>
-        <select
-          className="py-3 px-4 pe-9 border-none text-sm"
-          value={selectedFont}
-          onChange={onHandleSelectedFont}
+        <div
+          className={`py-3 px-4 pe-9 border-none text-sm ${
+            darkMode ? "bg-black-darkest text-white" : "bg-white text-black"
+          }`}
         >
-          <option>San Serif</option>
-          <option>Kalnia</option>
-          <option>Dhurjati</option>
-        </select>
+          <select
+            className="w-full bg-transparent text-inherit border-none appearance-none pr-10"
+            style={{
+              backgroundImage: `url(${arrowDown})`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right 0.5rem center",
+              backgroundSize: "1em",
+            }}
+            value={selectedFont}
+            onChange={onHandleSelectedFont}
+          >
+            <option>San Serif</option>
+            <option>Kalnia</option>
+            <option>Dhurjati</option>
+          </select>
+        </div>
         <div
           className="flex justify-between items-center gap-2 cursor-pointer"
           onClick={onHandleDarkMode}
         >
-          {/* FIXME: Add dark mode styles to the select element*/}
-          <img
-            src={`assets/images/toggle-${darkMode ? "on" : "off"}.svg`}
-            alt={`Toggle ${darkMode ? "on" : "off"}`}
-            className="w-10 h-10"
-          />
-          <img
-            src="assets/images/icon-moon.svg"
-            alt="Moon Icon"
-            className={`${darkMode ? " text-violet fill-current" : ""}`}
-          />
+          {darkMode ? <ToggleOnIcon /> : <ToggleOffIcon />}
+          <MoonIcon color={darkMode ? "#a445ed" : "#000"} />
         </div>
       </div>
     </nav>

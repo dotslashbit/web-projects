@@ -41,32 +41,31 @@ export default function App() {
 
   return (
     <div
-      className={`${darkMode ? "dark" : ""} ${
-        darkMode ? "bg-black-darkest" : ""
-      } ${darkMode ? "text-white-light" : ""}`}
+      className={`px-96 py-10 ${
+        darkMode ? "dark bg-black-darkest text-white-light" : ""
+      }`}
+      style={{ fontFamily: selectedFont }}
     >
-      <div className={`mx-96 my-10 `} style={{ fontFamily: selectedFont }}>
-        <Navbar
-          selectedFont={selectedFont}
-          onHandleSelectedFont={(e) => handleSelectedFontChange(e)}
-          darkMode={darkMode}
-          onHandleDarkMode={handleDarkModeChange}
-        />
-        <SearchBar
-          onChange={(e) => handleSearchWordChange(e)}
-          searchWord={searchWord}
-          getSearchResult={getSearchResult}
-          darkMode={darkMode}
-        />
-        {searchResult !== null && (
-          <>
-            <SearchWord searchResult={searchResult} />
-            <Noun searchResult={searchResult} darkMode={darkMode} />
-            <Verb searchResult={searchResult} />
-            <Footer sources={searchResult.sourceUrls} />
-          </>
-        )}
-      </div>
+      <Navbar
+        selectedFont={selectedFont}
+        onHandleSelectedFont={(e) => handleSelectedFontChange(e)}
+        darkMode={darkMode}
+        onHandleDarkMode={handleDarkModeChange}
+      />
+      <SearchBar
+        onChange={(e) => handleSearchWordChange(e)}
+        searchWord={searchWord}
+        getSearchResult={getSearchResult}
+        darkMode={darkMode}
+      />
+      {searchResult !== null && (
+        <>
+          <SearchWord searchResult={searchResult} />
+          <Noun searchResult={searchResult} darkMode={darkMode} />
+          <Verb searchResult={searchResult} />
+          <Footer sources={searchResult.sourceUrls} />
+        </>
+      )}
     </div>
   );
 }
