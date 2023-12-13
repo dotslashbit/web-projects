@@ -5,6 +5,7 @@ import Noun from "./components/Noun";
 import SearchBar from "./components/SearchBar";
 import SearchWord from "./components/SearchWord";
 import Verb from "./components/Verb";
+import ErrorSearchWord from "./components/ErrorSearchWord";
 
 //TODO: Add dark mode styles to the website
 // TODO: Handle Data fetching error
@@ -16,6 +17,7 @@ export default function App() {
   const [searchResult, setSearchResult] = useState(null);
   const [selectedFont, setSelectedFont] = useState("sans-serif");
   const [darkMode, setDarkMode] = useState(false);
+  const [error, setError] = useState(null);
 
   function handleSearchWordChange(event) {
     setSearchWord(event.target.value);
@@ -33,9 +35,16 @@ export default function App() {
     const response = await fetch(
       `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`
     );
-    const data = await response.json();
-    console.log(data);
-    setSearchResult(data[0]);
+    if (!response.ok) {
+      setError("Error");
+      console.log(error);
+    } else {
+      const data = await response.json();
+      console.log(data);
+      setSearchResult(data[0]);
+      setError(null);
+    }
+
     // return data;
   }
 
@@ -56,15 +65,18 @@ export default function App() {
         onChange={(e) => handleSearchWordChange(e)}
         searchWord={searchWord}
         getSearchResult={getSearchResult}
-        darkMode={darkMode}
       />
-      {searchResult !== null && (
-        <>
-          <SearchWord searchResult={searchResult} />
-          <Noun searchResult={searchResult} darkMode={darkMode} />
-          <Verb searchResult={searchResult} />
-          <Footer sources={searchResult.sourceUrls} />
-        </>
+      {error !== null ? (
+        <ErrorSearchWord />
+      ) : (
+        searchResult !== null && (
+          <>
+            <SearchWord searchResult={searchResult} />
+            <Noun searchResult={searchResult} darkMode={darkMode} />
+            <Verb searchResult={searchResult} />
+            <Footer sources={searchResult.sourceUrls} />
+          </>
+        )
       )}
     </div>
   );
