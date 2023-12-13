@@ -7,8 +7,8 @@ import SearchWord from "./components/SearchWord";
 import Verb from "./components/Verb";
 import ErrorSearchWord from "./components/ErrorSearchWord";
 
-//TODO: Add dark mode styles to the website
-// TODO: Handle Data fetching error
+//DONE: Add dark mode styles to the website
+// DONE: Handle Data fetching error
 // TODO: Add loading state
 // TODO: Handle invalid input or empty input
 
@@ -17,6 +17,7 @@ export default function App() {
   const [searchResult, setSearchResult] = useState(null);
   const [selectedFont, setSelectedFont] = useState("sans-serif");
   const [darkMode, setDarkMode] = useState(false);
+  const [invalidInput, setInvalidInput] = useState(null);
   const [error, setError] = useState(null);
 
   function handleSearchWordChange(event) {
@@ -32,6 +33,12 @@ export default function App() {
   }
 
   async function getSearchResult(searchWord) {
+    if (searchWord === "") {
+      setInvalidInput("Whoops, can't be empty…");
+      return;
+    } else {
+      setInvalidInput(null);
+    }
     const response = await fetch(
       `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`
     );
@@ -66,7 +73,9 @@ export default function App() {
         searchWord={searchWord}
         getSearchResult={getSearchResult}
       />
-      {error !== null ? (
+      {invalidInput !== null ? (
+        <p className="text-red">{invalidInput}</p>
+      ) : error !== null ? (
         <ErrorSearchWord />
       ) : (
         searchResult !== null && (
