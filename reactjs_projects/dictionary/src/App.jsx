@@ -57,7 +57,7 @@ export default function App() {
 
   return (
     <div
-      className={`px-96 py-10 ${
+      className={`xl:px-96 sm:px-10 py-10 ${
         darkMode ? "dark bg-black-darkest text-white-light" : ""
       }`}
       style={{ fontFamily: selectedFont }}
