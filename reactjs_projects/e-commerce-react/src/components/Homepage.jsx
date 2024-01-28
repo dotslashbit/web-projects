@@ -3,14 +3,14 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import BodySection from "./BodySection";
 import Footer from "./Footer";
+import Header from "./Header";
 
 const Homepage = () => {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <BodySection />
-      <Footer />
+      <Header />
+      {/* <BodySection />
+      <Footer /> */}
     </>
   );
 };

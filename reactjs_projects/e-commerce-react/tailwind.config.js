@@ -2,7 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern-desktop":
+          "url('/Users/introvertedbot/Documents/Projects/web_projects/reactjs_projects/e-commerce-react/src/assets/home/desktop/image-hero.jpg')",
+      },
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
