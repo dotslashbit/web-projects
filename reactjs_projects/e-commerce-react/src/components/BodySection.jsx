@@ -1,7 +1,6 @@
 import React from "react";
 import Categories from "./Categories";
 import Banner from "./Banner";
-import About from "./About";
 
 const BodySection = () => {
   return (

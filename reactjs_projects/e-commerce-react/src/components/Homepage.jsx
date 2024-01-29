@@ -10,7 +10,7 @@ const Homepage = () => {
     <>
       <Header />
       <BodySection />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
