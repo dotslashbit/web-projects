@@ -17,11 +17,13 @@ const About = () => {
           best place to buy your portable audio equipment.
         </p>
       </div>
-      <img
-        className="w-1/2 rounded-md"
-        src="src/assets/shared/desktop/image-best-gear.jpg"
-        alt="best-gear"
-      />
+      <div className="w-1/2 flex justify-center items-center">
+        <img
+          className="object-cover max-w-3/4 max-h-3/4 rounded-md"
+          src="src/assets/shared/desktop/image-best-gear.jpg"
+          alt="best-gear"
+        />
+      </div>
     </div>
   );
 };
