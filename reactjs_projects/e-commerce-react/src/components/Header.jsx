@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 
 const Header = () => {
   return (
-    <div className="bg-hero-pattern-desktop pb-10 bg-cover bg-no-repeat bg-center">
+    <div className="bg-hero-pattern-desktop px-20 pb-10 bg-cover bg-no-repeat bg-center">
       <Navbar />
       <HeroSection />
     </div>
