@@ -4,6 +4,7 @@ import CategoryPage from "./components/HeaphonePage";
 import HeadphonePage from "./components/HeaphonePage";
 import SpeakerPage from "./components/SpeakerPage";
 import EarphonePage from "./components/EarphonePage";
+import ProductDetailPage from "./components/ProductDetailPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Homepage /> */}
       {/* <HeadphonePage /> */}
       {/* <SpeakerPage /> */}
-      <EarphonePage />
+      {/* <EarphonePage /> */}
+      <ProductDetailPage />
     </>
   );
 }
